@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
 
 
 const Contracts = (props) => {
@@ -8,7 +10,13 @@ const Contracts = (props) => {
         console.log("CLG- contracts props",props);
         return(
             <div>
-                <h1>{name}, Welcome to your Contracts Page</h1>            
+                <Container>
+                    <h1>{name}, Welcome to your Contracts Page</h1>
+                    {/* <h1>click below for more details</h1> */}
+                        {/* <Button variant="contained" color="primary">
+                         Hello World
+                        </Button> */}
+                </Container>
             </div>)
         // }
     
