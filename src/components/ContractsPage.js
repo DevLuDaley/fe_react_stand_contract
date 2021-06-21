@@ -23,7 +23,7 @@ class ContractsPage extends Component {
   render() {
             return (
                 <>
-                {console.log("PROPs from ContractsPage", this.props)}
+                {/* {console.log("PROPs from ContractsPage", this.props)} */}
                 {/* {console.log("PROPs from ContractsPage")} */}
                     {/* <OldContractForm contracts={this.props.contracts}/> */}
                 <Container maxWidth="lg" id="component-contracts-page">
