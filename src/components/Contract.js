@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 
 
-const Contracts = (props) => {
+const Contract = (props) => {
     console.log("CLG from Contracts Component");
     const [name, setName] = useState("Lu");
     // render () {
@@ -22,4 +22,4 @@ const Contracts = (props) => {
     
 }
 
-export default Contracts
+export default Contract
