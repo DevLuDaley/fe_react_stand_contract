@@ -6,7 +6,7 @@ import { Box } from '@material-ui/core';
 
 import {fetchContracts} from '../actions/fetchContracts'
 // import {fetchWorkouts} from '../actions/fetchWorkouts'
-import ContractsPage from './ContractsPage';
+import ContractsPage from '../components/ContractsPage';
 import Contract from '../components/Contract'
 // import Navbar from '../components/Navbar'
 
@@ -36,13 +36,13 @@ class ContractsContainer extends Component {
             {console.log('CONTRACTS CONTAINER state', this.state)}
             
                 <BrowserRouter>
-                    <Route
+                    {/* <Route
                         exact path='/'
                         render={(routerProps) =>
                             <ContractsPage {...routerProps}
                         contracts={this.props.contracts}
                         // workouts={this.props.workouts}
-                    />}/>
+                    />}/> */}
 
                     <Route
                         exact path='/contracts/:id'
