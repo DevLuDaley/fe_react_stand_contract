@@ -55,8 +55,8 @@ const ContractsList = (props) =>  {
           {
             props.contracts ?
             props.contracts.map(contract =>
-              <ul 
-                key={"ul-key-" + contract.id} className='contracts-list' 
+              <ul
+                key={"ul-key-" + contract.id} className='contracts-list'
                 style={{listStyleType: 'none'}}
                 >
                 contract: {contract.id}
@@ -68,15 +68,16 @@ const ContractsList = (props) =>  {
 
                 {
                   contract.posts.length !== 0 ?
-                    contract.posts.map(post => 
+                    contract.posts.map(post =>
                        post.title + <br/>
+                       + <br/>
                       
                     )
-                : null 
+                : null
                 }
                 
                   {/* <ul></ul></ul> */}
-              </ul> 
+              </ul>
                 )
               
               : null
