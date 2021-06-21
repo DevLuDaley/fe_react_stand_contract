@@ -10,6 +10,7 @@ import Home from './user_auth/Home'
 import Login from './user_auth/Login'
 import Signup from './user_auth/Signup'
 import Contracts from './components/Contracts';
+import ContractsPage from './components/ContractsPage';
 
 class App extends Component {
   constructor(props) {
@@ -60,8 +61,10 @@ render() {
               // render={ handleLogin={handleLogin}} 
 
             />
-            <Route exact path='/contracts' component={Contracts} 
-            />
+            {/* <Route exact path='/contracts' component={Contracts} 
+            /> */}
+             <Route exact path='/contracts' component={ContractsPage} 
+            /> 
 
             <Route exact path='/TempPage' component={TempPage} 
             />
