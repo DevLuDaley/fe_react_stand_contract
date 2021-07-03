@@ -69,20 +69,14 @@ const ContractsList = (props) =>  {
                 {
                   contract.posts.length !== 0 ?
                     contract.posts.map(post =>
-                       post.title + <br/>
-                       + <br/>
-                      
+                       <p> {post.title} </p>
                     )
                 : null
                 }
-                
-                  {/* <ul></ul></ul> */}
               </ul>
                 )
-              
               : null
-                            }
-                
+          }
     </Container>
   )
 }
