@@ -6,7 +6,7 @@ const Contract = (props) => {
     console.log("CLG from Contracts Component");
     const [name, setName] = useState("Lu");
     // render () {
-        console.log("Console.log - contracts props => ",props);
+        console.log("CLG- contracts props",props);
         return(
             <div>
                 <Container>
