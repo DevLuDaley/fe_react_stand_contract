@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
+
 import Container from '@material-ui/core/Container';
+
+
 import ContractsList from '../components/ContractsList';
+// import NewContractForm from '../forms/NewContractForm';
+// // import Popup from 'reactjs-popup';
+// import ModalNewContractForm from '../forms/ModalNewContractForm'
+// import 'reactjs-popup/dist/index.css';
+
 
 class ContractsPage extends Component {
     constructor(props) {
