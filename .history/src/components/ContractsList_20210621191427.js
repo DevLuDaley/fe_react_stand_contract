@@ -63,6 +63,8 @@ const ContractsList = (props) =>  {
                 <br/>
                 {/* contract-date: {contract.date}
                 <br/> */}
+                {/* Text from line: 78 in ContractsList */}
+                {/* <br/> */}
 
                 {
                   contract.posts.length !== 0 ?
