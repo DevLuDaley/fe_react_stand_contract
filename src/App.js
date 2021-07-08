@@ -9,9 +9,7 @@ import TempPage from './user_auth/TempPage'
 import Home from './user_auth/Home'
 import Login from './user_auth/Login'
 import Signup from './user_auth/Signup'
-// import Contracts from './components/Contract';
-// import ContractsPage from './components/ContractsPage';
-import ContractsContainer from './Containers/ContractsContainer';
+import Contracts from './components/Contract';
 
 class App extends Component {
   constructor(props) {
@@ -53,7 +51,7 @@ handleLogout = () => {
 render() {
     return (
       <div>
-         {/* <BrowserRouter> */}
+         <BrowserRouter>
           <Switch>
             <Route exact path='/' component={Home}
 
@@ -62,10 +60,8 @@ render() {
               // render={ handleLogin={handleLogin}} 
 
             />
-            {/* <Route exact path='/contracts' component={Contracts} 
-            /> */}
-             {/* <Route exact path='/contracts' component={ContractsPage} 
-            />  */}
+            <Route exact path='/contracts' component={Contracts} 
+            />
 
             <Route exact path='/TempPage' component={TempPage} 
             />
@@ -76,8 +72,7 @@ render() {
 />
 
           </Switch>
-        {/* </BrowserRouter> */}
-        <ContractsContainer/>
+        </BrowserRouter>
       </div>
     );
   }
