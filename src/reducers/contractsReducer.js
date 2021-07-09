@@ -1,4 +1,4 @@
-import {_, set, update, flow} from 'lodash/fp';
+// import {_, set, update, flow} from 'lodash/fp';
 
 // const intialState = {contracts: [], contract: {}}
 const intialState = [{"contracts": [], "workouts": []}]
@@ -16,9 +16,9 @@ export default function contractsReducer(state = intialState, action) {
 
         case 'UPDATE_CONTRACT':
             const payloadId = action.payload.id
-            const updatedContract = action.payload
-            const selectedContract = state.contracts.filter(contract => 
-                        contract.id == payloadId)
+            // const updatedContract = action.payload
+            // const selectedContract = state.contracts.filter(contract => 
+            //             contract.id == payloadId)
                         // console.log('🚀 ~~line 17 ~ ~ UPDATED-CONTRACT', updatedContract);
                         // console.log('🚀 ~~ line 16 ~ ~ PAYLOAD-ID', payloadId);
                         // console.log('🚀 ~~ line 20 ~ ~  state.contracts.FILTER', state.contracts.filter(contract => contract.id == payloadId))
