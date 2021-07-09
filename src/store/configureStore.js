@@ -1,6 +1,7 @@
 // import thunk from 'redux-thunk'
 
-import { applyMiddleware, compose, createStore } from 'redux'
+import { applyMiddleware, createStore } from 'redux'
+// import { applyMiddleware, compose, createStore } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 // import mealsReducer from './mealsReducer'
