@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 // import {Link} from 'react-router-dom'
-import { Link, BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
-import Contract from '../components/Contract'
+import { Link } from 'react-router-dom';
+// import { Link, BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+// import Contract from '../components/Contract'
 // import App from '../App'
-import Home from '../user_auth/Home'
-import TempPage from '../user_auth/TempPage'
+// import Home from '../user_auth/Home'
+// import TempPage from '../user_auth/TempPage'
 // import {App, handleLogin} from '../App'
 // import {handleLogin} from '../App'
 
