@@ -1,11 +1,12 @@
 //! react/redux imports
-import React, { Fragment, useState } from 'react'
-import {Link} from 'react-router-dom';
+import React from 'react'
+// import React, { Fragment, useState } from 'react'
+// import {Link} from 'react-router-dom';
 import { connect } from 'react-redux'
 
 //! Material-ui imports
 import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
+// import Box from '@material-ui/core/Box';
 
 //! local file imports
 // import deleteContract from '../actions/deleteContract'
@@ -90,4 +91,3 @@ function mapStateToProps(state) {
 
 // export default connect(mapStateToProps, {deleteContract, deleteContractWorkout}) (ContractsList);
 export default connect(mapStateToProps) (ContractsList);
-{/* {contract.posts.length != 0 ? */}
