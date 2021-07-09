@@ -94,19 +94,9 @@ this.props.history.push('/contracts')
               // return (<Contracts/>)
               // return (
               // <div>
-                {/* <Contracts/> */}
-                
-                 {/* <Route exact path="/Login">
-                    {response ? <Redirect to="/contracts" /> : <Redirect to="/temppage" />}
-                </Route> */}
-                    {/* {this.isLoggedIn ? <Redirect to="/contracts" /> : <Home />} */}
-                    // <Redirect to="/home"/>
 
-                {console.log("Lu, here are your WINS!", response)}
-              {/* </div>  */}
-                // )
-                // return <Redirect push to="/home"/>
-                // history.push("/home")
+
+                // {console.log("Lu, here are your WINS!", response)}
 
 
             } else {
