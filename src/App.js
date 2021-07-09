@@ -9,13 +9,15 @@ import TempPage from './user_auth/TempPage'
 import Home from './user_auth/Home'
 import Login from './user_auth/Login'
 import Signup from './user_auth/Signup'
-import Contracts from './components/Contract';
+import Contract from './components/Contract';
+import ContractsList from './components/ContractsList';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = { 
       isLoggedIn: false,
+      // isLoggedIn: true,
       user: {}
      };
   }
@@ -58,9 +60,10 @@ render() {
             />
             <Route exact path='/login' component={Login} 
               // render={ handleLogin={handleLogin}} 
-
             />
-            <Route exact path='/contracts' component={Contracts} 
+            <Route exact path='/contract' component={Contract} 
+            />
+            <Route exact path='/contractslist' component={ContractsList} 
             />
 
             <Route exact path='/TempPage' component={TempPage} 
