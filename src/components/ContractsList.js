@@ -50,9 +50,11 @@ const ContractsList = (props) =>  {
     //     }
     //     }
     // }
-    
+    console.log("WORDs => ")
   return (
     <Container maxWidth="lg">
+          { console.log("props.contracts => ", props.contracts)  }
+          { console.log("WORDs => ")  }
           {
             props.contracts ?
             props.contracts.map(contract =>
