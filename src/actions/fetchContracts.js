@@ -3,7 +3,7 @@ export function fetchContracts() {
     // ! bring in dispatch so that we can async if not the connect will handle synchronously
 
     // const WH_URL = process.env.REACT_APP_WH_URL;
-    const WH_URL = process.env.REACT_APP_WH_URL;
+    //h const WH_URL = process.env.REACT_APP_WH_URL;
     // console.log('🚀 ~ file: fetchContracts.js ~ line 7 ~ fetchContracts ~ WH_URL', WH_URL);
     
     // console.log('🚀 ~ file: fetchContracts.js ~ line 7 ~ fetchContracts ~ process.env', process.env);
