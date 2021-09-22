@@ -8,22 +8,19 @@ import {fetchContracts} from '../actions/fetchContracts'
 // import {fetchWorkouts} from '../actions/fetchWorkouts'
 import ContractsPage from '../components/ContractsPage';
 import Contract from '../components/Contract'
+import Login from '../user_auth/Login'
 // import Navbar from '../components/Navbar'
 
 class ContractsContainer extends Component {
     constructor(props) {
         super(props);
         this.fetchContracts = fetchContracts
-        // this.fetchWorkouts = fetchWorkouts
         this.state = {
             contracts: []
-            // ,
-            // workouts: []
         }
     }
     componentDidMount(){
         this.props.fetchContracts()
-        // this.props.fetchWorkouts()
         
     }
     render() {
@@ -33,33 +30,28 @@ class ContractsContainer extends Component {
                 <Switch>
             {console.log('CONTRACTS CONTAINER props', this.props.contracts)}
             
-            {console.log('CONTRACTS CONTAINER state', this.state)}
+            {/* {console.log('CONTRACTS CONTAINER state', this.state)} */}
             
-                <BrowserRouter>
-                    {/* <Route
-                        exact path='/'
-                        render={(routerProps) =>
-                            <ContractsPage {...routerProps}
-                        contracts={this.props.contracts}
-                        // workouts={this.props.workouts}
-                    />}/> */}
-
-                    <Route
-                        exact path='/contracts/:id'
-                        render={(routerProps) =>
-                            <Contract {...routerProps}
-                        contracts={this.props.contracts}
-                        // workouts={this.props.workouts}
-                    />}/>
-
-                    <Route
-                    exact path='/contracts'
-                    render={(routerProps) =>
-                        <ContractsPage {...routerProps}
-                    contracts={this.props.contracts }
-                    // workouts={this.props.workouts}
-                    />}/>
-</BrowserRouter>
+                    <BrowserRouter>
+                        <Route
+                            exact path='/contracts/:id'
+                            render={(routerProps) =>
+                                <Contract {...routerProps}
+                            contracts={this.props.contracts}
+                        />}/>
+                        <Route
+                            exact path='/contracts'
+                            render={(routerProps) =>
+                                <ContractsPage {...routerProps}
+                            contracts={this.props.contracts}
+                        />}/>
+                        <Route
+                            exact path='/login'
+                            render={(routerProps) =>
+                                <Login {...routerProps}
+                            contracts={this.props.contracts}
+                        />}/>
+                    </BrowserRouter>
                 </Switch>
             </Box> 
         );

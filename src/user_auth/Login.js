@@ -19,18 +19,19 @@ class Login extends Component {
       // email: '',
       password: '',
       errors: '',
-       isLoggedIn: true,
+      isLoggedIn: true,
       //  isLoggedIn: false,
       user: {},
       location: ""
       
-     };
+    };
+    console.log("LOGIN this.props =>>>>",this.props);
   }
     handleLogin = (response) => {
       // response.preventDefault()
-    console.log(`🚀 ~ file: Login.js ~ line 25 ~ Login ~ response`, response)
-    console.log(`🚀 ~ file: Login.js ~ line 25 ~ Login ~ response.data`, response.data)
-    console.log(`🚀 ~ file: Login.js ~ line 26 ~ Login ~ response.data.user`, response.data.user)
+    // console.log(`🚀 ~ file: Login.js ~ line 25 ~ Login ~ response`, response)
+    // console.log(`🚀 ~ file: Login.js ~ line 25 ~ Login ~ response.data`, response.data)
+    // console.log(`🚀 ~ file: Login.js ~ line 26 ~ Login ~ response.data.user`, response.data.user)
     // console.log(`🚀 ~ file: Login.js ~ line 24 ~ Login ~ e`, e)
       // data.preventDefault()
     // console.log(`🚀 ~ file: Login.js ~ line 23 ~ Login ~ data`, data)
@@ -62,8 +63,8 @@ this.props.history.push('/contracts')
         // const {username, email, password} = this.state
         const {username, password} = this.state
 
-        console.log('this.props => ', this.props)
-        console.log('this.state => ', this.state)
+        console.log('LOGIN => this.props => ', this.props)
+        console.log('LOGIN =>  this.state => ', this.state)
         // console.log('this.state => ', this.state.handleLogin)
 
         let user = {
