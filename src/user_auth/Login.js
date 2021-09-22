@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios'
 // import {Link} from 'react-router-dom'
 import { Link } from 'react-router-dom';
+// import {fetchContracts} from '../actions/fetchContracts'
+import {fetchContracts} from '../actions/fetchContracts'
+
 // import { Link, BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 // import Contract from '../components/Contract'
 // import App from '../App'
@@ -10,10 +13,11 @@ import { Link } from 'react-router-dom';
 // import {App, handleLogin} from '../App'
 // import {handleLogin} from '../App'
 
-// handleLogin={handleLogin}
 class Login extends Component {
   constructor(props) {
     super(props);
+    this.fetchContracts = fetchContracts
+    this.props = props
     this.state = { 
       username: '',
       // email: '',
@@ -23,32 +27,22 @@ class Login extends Component {
       //  isLoggedIn: false,
       user: {},
       location: ""
+      ,
+      contracts: []
       
     };
-    console.log("LOGIN this.props =>>>>",this.props);
+
+    console.log("LOGIN this.props =>>>> ", this.props);
   }
+
     handleLogin = (response) => {
-      // response.preventDefault()
-    // console.log(`🚀 ~ file: Login.js ~ line 25 ~ Login ~ response`, response)
-    // console.log(`🚀 ~ file: Login.js ~ line 25 ~ Login ~ response.data`, response.data)
-    // console.log(`🚀 ~ file: Login.js ~ line 26 ~ Login ~ response.data.user`, response.data.user)
-    // console.log(`🚀 ~ file: Login.js ~ line 24 ~ Login ~ e`, e)
-      // data.preventDefault()
-    // console.log(`🚀 ~ file: Login.js ~ line 23 ~ Login ~ data`, data)
-    // console.log(`🚀 ~ file: Login.js ~ line 24 ~ Login ~ this.state`, this.state)
     this.setState({
       isLoggedIn: true,
       user: response.data.user
-    }
+      }
     )
-  //   location = {
-  // pathname: '/login'
-  // state: { from: 'Main' }
-// }
-// history.push(location)
-// router.transitionTo('/dashboard')
-    
-this.props.history.push('/contracts')
+      this.props.fetchContracts();
+      this.props.history.push('/contracts')
     }
 
     handleChange = (event) => {
@@ -65,7 +59,6 @@ this.props.history.push('/contracts')
 
         console.log('LOGIN => this.props => ', this.props)
         console.log('LOGIN =>  this.state => ', this.state)
-        // console.log('this.state => ', this.state.handleLogin)
 
         let user = {
           username: username,
