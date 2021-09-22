@@ -9,6 +9,7 @@ class ContractsPage extends Component {
         // this.state = {
         //     contracts: []
         // }
+        this.props = props
     }
     
     render() {

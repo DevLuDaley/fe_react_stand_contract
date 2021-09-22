@@ -45,12 +45,12 @@ class ContractsContainer extends Component {
                                 <ContractsPage {...routerProps}
                             contracts={this.props.contracts}
                         />}/>
-                        <Route
+                        {/* <Route
                             exact path='/login'
                             render={(routerProps) =>
                                 <Login {...routerProps}
                             contracts={this.props.contracts}
-                        />}/>
+                        />}/> */}
                     </BrowserRouter>
                 </Switch>
             </Box> 
