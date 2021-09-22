@@ -41,7 +41,7 @@ class Login extends Component {
       user: response.data.user
       }
     )
-      this.props.fetchContracts();
+      // this.props.fetchContracts();
       this.props.history.push('/contracts')
     }
 
